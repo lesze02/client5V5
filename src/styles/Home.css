@@ -54,7 +54,7 @@
 .home-table {
     width: 250px;
     padding: 16px 0;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.2s ease;
@@ -75,7 +75,7 @@
 
 .home-table {
     background: transparent;
-    border: 1px solid #555;
+    border: 3px solid #555;
     color: #ffffff;
 }
 
