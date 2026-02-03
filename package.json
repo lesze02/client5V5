@@ -1,5 +1,5 @@
 {
-  "homepage": "http://Lesze02.github.io/Aplikacja5V5",
+  "homepage": "http://Lesze02.github.io/Client5V5",
   "name": "client",
   "private": true,
   "version": "0.0.0",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d docs"
   },
   "dependencies": {
     "react": "^19.2.0",
