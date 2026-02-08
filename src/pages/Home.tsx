@@ -77,7 +77,7 @@ export default function Home() {
 
     return (
         <div className="home-container">
-            <button className='home-login'>xd</button>
+            {/* <button className='home-login'>xd</button>
             <img src={logo} style={{marginBottom: '-170px', marginTop: '10px', width: '17%'}} alt="Logo Piec na Piec" className="home-logo" />
             <h1>PIEC NA PIEC</h1>
             <button className="home-new-game" onClick={() => navigate('/new-match')}>Nowy mecz</button>
@@ -115,7 +115,8 @@ export default function Home() {
                         </li>
                     ))}
                 </ul>
-            )}
+            )} */}
+            <h1>Prace w toku</h1>
         </div>
     );
 }
