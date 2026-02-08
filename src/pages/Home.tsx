@@ -2,7 +2,7 @@ import '../styles/Home.css';
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { apiUrl } from '../config/api';
-import logo from '../assets/logo.png';
+// import logo from '../assets/logo.png';
 
 interface PlayerStats {
     player_id: number;
@@ -20,9 +20,9 @@ interface MatchData {
 }
 
 export default function Home() {
-    const navigate = useNavigate();
-    const [matches, setMatches] = useState<MatchData[]>([]);
-    const [loading, setLoading] = useState(true);
+    // const navigate = useNavigate();
+    // const [matches, setMatches] = useState<MatchData[]>([]);
+    // const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const fetchMatches = async () => {
