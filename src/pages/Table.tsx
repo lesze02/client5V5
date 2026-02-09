@@ -129,7 +129,12 @@ export default function Table() {
                 };
             })
             .filter((stat): stat is PlayerTableStats => stat !== null && stat.games > 0)
-            .sort((a, b) => b.winrate - a.winrate || b.wins - a.wins);
+            .sort((a, b) => {
+                if (a.winrate !== b.winrate) {
+                    return b.winrate - a.winrate;
+                }
+                return b.kda - a.kda;
+            });
     };
 
     if (loading) {
