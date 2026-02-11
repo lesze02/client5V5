@@ -1,10 +1,17 @@
 import { HashRouter, Routes, Route } from 'react-router-dom'
+import { useEffect } from 'react'
 import Home from './pages/Home'
 import NewMatch from './pages/NewMatch'
 import Match from './pages/Match'
 import Table from './pages/Table'
+import { startKeepAlive, stopKeepAlive } from './services/keepAliveService'
 
 function App() {
+  useEffect(() => {
+    startKeepAlive();
+    return () => stopKeepAlive();
+  }, []);
+
   return (
     <HashRouter>
       <Routes>
